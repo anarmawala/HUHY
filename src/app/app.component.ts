@@ -17,26 +17,18 @@ export class AppComponent implements OnInit {
   question: Questionaire
   title = 'HUHY';
 
-  // getQuestions(): void {
-  //   this.questionService
-  //       .getQuestions()
-  //       .then(questions => this.questions = questions);
-  // }
-
-  setEatYesterday(value): void {
-    alert(value);
-  }
-
-  setMoneyWorry(value): void {
-    alert(value);
-  }
-
-  setMoneyRanout(value): void {
-    alert(value);
+  postQuestions(): void {
+    this.questionService
+        .postQuestions(this.question);
   }
 
   ngOnInit(): void {
     this.question = new Questionaire();
+    this.question.eat_yesterday="unanswered";
+    this.question.money_ranout="unanswered";
+    this.question.money_worry="unanswered";
+    this.question.zip="unanswered";
+    this.question.name="unanswered";
   }
 }
 

@@ -9,16 +9,15 @@ export class QuestionService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
 
-  private questionsUrl = 'http://date.jsontest.com';  // URL to web api
+  private questionsUrl = 'http://localhost/huhy-backend/questionaire';  // URL to web api
 
   constructor(private http: Http) { }
 
-    getQuestions(): Promise<Questionaire[]> {
-    
-        return this.http.get(this.questionsUrl)
-                .toPromise()
-                .then(response => response.json().data as Questionaire[])
-                .catch(this.handleError);
+  postQuestions(question): void {
+    console.info("Questions being sent:" + question.eat_yesterday);
+        this.http
+            .post(this.questionsUrl, question)
+            .subscribe();
     }
 
     private handleError(error: any): Promise<any> {
