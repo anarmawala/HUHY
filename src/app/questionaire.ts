@@ -1,5 +1,8 @@
 export class Questionaire {
-    time: string;
-    milliseconds_since_epoch: string;
-    date: string
+    name: string;
+    email: string;
+    zip: string;
+    eat_yesterday: string;
+    money_worry: string;
+    money_ranout: string;
 }

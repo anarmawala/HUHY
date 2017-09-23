@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     private questionService: QuestionService) {     
     }
 
-  questions: Questionaire[]
+  question: Questionaire
   title = 'HUHY';
 
   // getQuestions(): void {
@@ -23,23 +23,20 @@ export class AppComponent implements OnInit {
   //       .then(questions => this.questions = questions);
   // }
 
-  getQuestions(): void {
+  setEatYesterday(value): void {
+    alert(value);
+  }
 
-    var q1 = new Questionaire();
-    q1.time = "blah";
-    q1.date = "sdsd";
-    q1.milliseconds_since_epoch = "blah";
-    
-    var q2 = new Questionaire();
-    q1.time = "blah";
-    q2.date = "wewew";
-    q2.milliseconds_since_epoch = "blah";
-    
-    this.questions = [q1,q2];
+  setMoneyWorry(value): void {
+    alert(value);
+  }
+
+  setMoneyRanout(value): void {
+    alert(value);
   }
 
   ngOnInit(): void {
-    this.getQuestions();
+    this.question = new Questionaire();
   }
 }
 
