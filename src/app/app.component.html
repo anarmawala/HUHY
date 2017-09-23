@@ -2,7 +2,10 @@
 <!--figure class="image">
   <img width="300" src="https://www.schooldistrict149.org/vimages/shared/vnews/stories/538f64b1b7cd5/Blog-header[1].gif">
 </figure-->
-<div class="column ">
+<div class="column">
+  <div class="column is-offset-one-quarter is-half has-text-centered">
+    <img src="../assets/huhylogo.png" alt="" width="150px">
+  </div>
   <div class="column is-offset-one-quarter is-half">
     <div style="text-align:center">
       <p class="is-size-3">
@@ -16,7 +19,6 @@
     <h2>Please answer the following questions to be entered into a raffle   for a $100 Target giftcard: </h2>
     
     <hr>
-
     
     <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
       <span><label>Did you eat yesterday?</label></span>
@@ -26,7 +28,7 @@
         <button class="button is-size-4 is-danger" (click)="question.eat_yesterday = 'No'">No</button>
       </div>
     </div>
-
+    
     <!--div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
       <span><label>Did you eat yesterday?</label></span>
       <div class="control has-text-centered is-size-3">
@@ -35,7 +37,7 @@
         <button class="button is-size-4 is-danger">No</button>
       </div>
     </div-->
-
+    
     <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
       <span><label>In the past 12 months, were you worried whether your food would run out before you got money to buy more?</label></span>
       <div class="control has-text-centered is-size-3">
@@ -44,7 +46,7 @@
         <button class="button is-size-4 is-danger" (click)="question.money_worry = 'No'">No</button>
       </div>
     </div>
-
+    
     <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
       <span><label>In the past 12 months, did you run out of food and not have money to buy more?</label></span>
       <div class="control has-text-centered is-size-3">
@@ -53,6 +55,27 @@
         <button class="button is-size-4 is-danger" (click)="question.money_ranout = 'No'">No</button>
       </div>
     </div>
+    
+        <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+          <span><label>Name</label></span>
+          <div class="control has-text-centered is-size-3">
+            <input type="text" class="input" name="name" placeholder="Joe Doe">
+          </div>
+        </div>
+    
+        <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+          <span><label>Email</label></span>
+          <div class="control has-text-centered is-size-3">
+            <input type="text" class="input" name="email" placeholder="email@sample.com">
+          </div>
+        </div>
+    
+        <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+          <span><label>Zipcode</label></span>
+          <div class="control has-text-centered is-size-3">
+            <input type="text" class="input" name="zipcode" placeholder="12345">
+          </div>
+        </div>
   </div>
   <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
       <span><label>Click SUBMIT</label></span>
