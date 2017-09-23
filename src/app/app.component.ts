@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     }
 
   questions: Questionaire[]
-  title = 'app';
+  title = 'HUHY';
 
   // getQuestions(): void {
   //   this.questionService

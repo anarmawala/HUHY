@@ -1,99 +1,61 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="column">
-  <div style="text-align:center">
+<!--figure class="image">
   <img width="300" src="https://www.schooldistrict149.org/vimages/shared/vnews/stories/538f64b1b7cd5/Blog-header[1].gif">
-  <h1>
-    Welcome to {{title}} - {{neighborhood}}!
-    Help Us Help You
-  </h1>
-
-  </div>
-  <h2>Please answer the following questions to be entered into a raffle   for a $100 Target giftcard: </h2>
-  <div class="field">
-    <label class="label">Name</label>
-    <div class="control">
-      <input class="input" type="text" placeholder="Text input">
+</figure-->
+<div class="column ">
+  <div class="column is-offset-one-quarter is-half">
+    <div style="text-align:center">
+      <p class="is-size-3">
+        Welcome to {{title}}
+        <br>
+        <span class="is-size=6">Help Us Help You</span>
+      </p>
     </div>
-  </div>
 
-  <div class="field">
-    <label class="label">Username</label>
-    <div class="control has-icons-left has-icons-right">
-      <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-      <span class="icon is-small is-left">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="icon is-small is-right">
-        <i class="fa fa-check"></i>
-      </span>
+    <br>
+    <h2>Please answer the following questions to be entered into a raffle   for a $100 Target giftcard: </h2>
+    
+    <hr>
+
+    
+    <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+      <span><label>Did you eat yesterday?</label></span>
+      <div class="control has-text-centered is-size-3">
+        <button class="button is-size-4 is-success">Yes</button>
+        &nbsp;
+        <button class="button is-size-4 is-danger">No</button>
+      </div>
     </div>
-    <p class="help is-success">This username is available</p>
-  </div>
 
-  <div class="field">
-    <label class="label">Email</label>
-    <div class="control has-icons-left has-icons-right">
-      <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-      <span class="icon is-small is-left">
-        <i class="fa fa-envelope"></i>
-      </span>
-      <span class="icon is-small is-right">
-        <i class="fa fa-warning"></i>
-      </span>
+    <!--div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+      <span><label>Did you eat yesterday?</label></span>
+      <div class="control has-text-centered is-size-3">
+        <button class="button is-size-4 is-success">Yes</button>
+        &nbsp;
+        <button class="button is-size-4 is-danger">No</button>
+      </div>
+    </div-->
+
+    <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+      <span><label>In the past 12 months, were you worried whether your food would run out before you got money to buy more?</label></span>
+      <div class="control has-text-centered is-size-3">
+        <button class="button is-size-4 is-success">Yes</button>
+        &nbsp;
+        <button class="button is-size-4 is-danger">No</button>
+      </div>
     </div>
-    <p class="help is-danger">This email is invalid</p>
-  </div>
 
-  <div class="field">
-    <label class="label">Subject</label>
-    <div class="control">
-      <div class="select">
-        <select>
-          <option>Select dropdown</option>
-          <option>With options</option>
-        </select>
+    <div class="field is-size-2 is-12 has-text-centered questionnaire vcentered">
+      <span><label>In the past 12 months, did you run out of food and not have money to buy more?</label></span>
+      <div class="control has-text-centered is-size-3">
+        <button class="button is-size-4 is-success">Yes</button>
+        &nbsp;
+        <button class="button is-size-4 is-danger">No</button>
       </div>
     </div>
   </div>
-
-  <div class="field">
-    <label class="label">Message</label>
-    <div class="control">
-      <textarea class="textarea" placeholder="Textarea"></textarea>
-    </div>
-  </div>
-
-  <div class="field">
-   <div class="control">
-     <label class="checkbox">
-       <input type="checkbox">
-       I agree to the <a href="#">terms and conditions</a>
-      </label>
-    </div>
-  </div>
-
-  <div class="field">
-    <div class="control">
-      <label class="radio">
-        <input type="radio" name="question">
-        Yes
-      </label>
-      <label class="radio">
-        <input type="radio" name="question">
-       No
-      </label>
-    </div>
-  </div>
-
-  <div class="field is-grouped">
-    <div class="control">
-      <button class="button is-primary">Submit</button>
-    </div>
-    <div class="control">
-      <button class="button is-link">Cancel</button>
-    </div>
-  </div>
-
+<div class="column is-12 has-text-centered">
+  <a href="https://www.chicagosfoodbank.org/find-food/?_ga=2.4028976.1496455220.1506198061-1024810931.1506198061">Click here to find food near you.</a></div>
   <ul>
     <li *ngFor="let question of questions">
       <h2>{{question.time}}</h2>
