@@ -18,16 +18,13 @@ export class AppComponent implements OnInit {
   question: Questionaire
   title = 'HUHY';
   submitted = false;
+  count = 0;
 
   postQuestions(): void {
-   // var response = this.questionService
-   //     .postQuestions(this.question);
+    var response = this.questionService
+       .postQuestions(this.question);
     this.submitted = true;
-    //console.info("response" +  response);
-    //alert(response);
-    Observable.timer(0,1000).subscribe(timer=>{
-      if (timer >=999) this.submitted = false;
-    });
+    console.info("response" +  response);
   }
 
   ngOnInit(): void {
@@ -37,6 +34,7 @@ export class AppComponent implements OnInit {
     this.question.money_worry="unanswered";
     this.question.zip="unanswered";
     this.question.name="unanswered";
+    this.count = 60;
   }
 }
 
