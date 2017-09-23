@@ -13,11 +13,13 @@ export class QuestionService {
 
   constructor(private http: Http) { }
 
-  postQuestions(question): void {
+  postQuestions(question): Response {
     console.info("Questions being sent:" + question.eat_yesterday);
+      var result;
         this.http
             .post(this.questionsUrl, question)
-            .subscribe();
+            .subscribe(res => result = res)
+       return result.json;     
     }
 
     private handleError(error: any): Promise<any> {

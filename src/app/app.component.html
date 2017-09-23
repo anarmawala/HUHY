@@ -2,7 +2,7 @@
 <!--figure class="image">
   <img width="300" src="https://www.schooldistrict149.org/vimages/shared/vnews/stories/538f64b1b7cd5/Blog-header[1].gif">
 </figure-->
-<div class="column">
+<div class="column" *ngIf="submitted==false">
   <div class="column is-offset-one-quarter is-half has-text-centered">
     <img src="../assets/huhylogo.png" alt="" width="150px">
   </div>
@@ -82,13 +82,16 @@
       <div class="control has-text-centered is-size-3">
         <button class="button is-size-4 is-success" (click)="postQuestions()">SUBMIT</button>
       </div>
-    </div>
-<div class="column is-12 has-text-centered">
-  <a href="https://www.chicagosfoodbank.org/find-food/?_ga=2.4028976.1496455220.1506198061-1024810931.1506198061">Click here to find food near you.</a></div>
-  <p>
-  {{question.eat_yesterday}}
-  {{question.money_ranout}}
-  {{question.money_worry}}
+  </div>
+  <div class="column is-12 has-text-centered">
+    <a href="https://www.chicagosfoodbank.org/find-food/?_ga=2.4028976.1496455220.1506198061-1024810931.1506198061">Click here to find food near you.</a>
+  </div>
+</div>
+
+<div *ngIf="submitted==true">
+    <h1>
+      Thanks for you submission!
+    </h1>
 </div>
 
 

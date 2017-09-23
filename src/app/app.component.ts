@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Questionaire } from './questionaire';
 import { QuestionService } from './questions.services';
+import { Observable, Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-root',
@@ -16,10 +17,17 @@ export class AppComponent implements OnInit {
 
   question: Questionaire
   title = 'HUHY';
+  submitted = false;
 
   postQuestions(): void {
-    this.questionService
-        .postQuestions(this.question);
+   // var response = this.questionService
+   //     .postQuestions(this.question);
+    this.submitted = true;
+    //console.info("response" +  response);
+    //alert(response);
+    Observable.timer(0,1000).subscribe(timer=>{
+      if (timer >=999) this.submitted = false;
+    });
   }
 
   ngOnInit(): void {
