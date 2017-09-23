@@ -14,7 +14,10 @@ export class QuestionService {
   constructor(private http: Http) { }
 
   postQuestions(question): Response {
-    console.info("Questions being sent:" + question.eat_yesterday);
+    console.info("Questions eat:" + question.eat_yesterday);
+    console.info("Questions zip:" + question.zip);
+    console.info("Questions email:" + question.email);
+    console.info("Questions name:" + question.name);
       var result;
         this.http
             .post(this.questionsUrl, question)

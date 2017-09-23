@@ -32,8 +32,9 @@ export class AppComponent implements OnInit {
     this.question.eat_yesterday="unanswered";
     this.question.money_ranout="unanswered";
     this.question.money_worry="unanswered";
-    this.question.zip="unanswered";
-    this.question.name="unanswered";
+    this.question.zip="60602";
+    this.question.name="my name";
+    this.question.email="abc@email.com";
     this.count = 60;
   }
 }
