@@ -22,7 +22,8 @@ export class QuestionService {
         this.http
             .post(this.questionsUrl, question)
             .subscribe(res => result = res)
-       return result.json;     
+       return result;
+       //result.json;     
     }
 
     private handleError(error: any): Promise<any> {
