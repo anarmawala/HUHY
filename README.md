@@ -1,8 +1,8 @@
 # HUHY - Help Us Help You
 
-[Greater Chicago Food Depository] (https://www.chicagosfoodbank.org/) presented the problem of collecting data that *captures rates of food insecurity at the neighborhood level in real-time.*
+[Greater Chicago Food Depository](https://www.chicagosfoodbank.org/) presented the problem of collecting data that *captures rates of food insecurity at the neighborhood level in real-time.*
 
-Our team of 9 developed this potential MVP solution over a 12-hour time frame at Chicago's Hackathon to End Hunger 2017.
+Our team of 9 developed this potential MVP solution over roughly 11 hours at Chicago's 'Hackathon to End Hunger 2017'.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
