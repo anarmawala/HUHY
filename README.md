@@ -2,9 +2,9 @@
 
 [Greater Chicago Food Depository](https://www.chicagosfoodbank.org/) presented the problem of collecting data that *captures rates of food insecurity at the neighborhood level in real-time.*
 
-Our team of 9 developed this potential MVP solution over roughly 10 hours at Chicago's 'Hackathon to End Hunger 2017'.
+Our team of 9 developed this potential MVP solution over roughly 10 hours at Chicago's 'Hackathon to End Hunger 2017'. Our project involved creating a web application to be set up at kiosks in public buildings around Cook County, collecting survey data about food insecurity at the neighborhood level. Frontend included AngularJS and Bulma, backend included a Raspberry Pi and MongoDB.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3. 
 
 ## Development server
 
